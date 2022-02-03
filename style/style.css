@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('img/bg.jpg') no-repeat fixed;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+/*title of form*/
+.main-div-login h2,
+.main-div-register h2 {
+	text-align: center;
+	padding: 40px;
+	font-size: 25px;
+}
+
+/*log*/
+.main-div-login {
+	width: 350px;
+	height: 325px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	transform: translate(-50%,-50%);
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 5px 5px gray;
+}
+
+.username input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: url('img/user.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	background-size: 6%;
+	font-size: 15px;
+	height: 10%;
+	width: 80%;
+	border: none;
+	padding-left: 40px;
+	border-bottom: 2px solid #095197;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-10%);
+	transition: width 0.5s, ease-in;
+}
+
+.password input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: url('img/key.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	background-size: 6%;
+	font-size: 15px;
+	height: 10%;
+	width: 80%;
+	border: none;
+	padding-left: 40px;
+	border-bottom: 2px solid #095197;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,200%);
+	transition: width 0.5s, ease-in;
+}
+
+.sign-in input/*[type=submit]*/ {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: white;
+	left: 50%;
+	transform: translate(-50%,0%);
+	position: relative;
+	width: 80%;
+	padding: 10px;
+	margin-top: 140px;
+	background: #095197;
+	border: 1px solid #0f4c75;
+	border-radius: 50px;
+}
+
+.sign-in p {
+	font-family: 'Crimson Text', serif;
+	font-size: 15px;
+	color: black;
+	margin-top: 9px;
+	position: relative;
+	text-align: center;
+}
+/*end og log*/
+
+/*reg*/
+.main-div-register {
+	width: 350px;
+	height: 450px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	transform: translate(-50%,-50%);
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 5px 5px #A9A9A9;
+}
+
+.usernameReg input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: url('img/user.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	background-size: 6%;
+	font-size: 15px;
+	height: 7%;
+	width: 80%;
+	border: none;
+	padding-left: 40px;
+	border-bottom: 2px solid #095197;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,0%);
+	transition: width 0.5s, ease-in;
+}
+
+.email input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: url('img/at.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	background-size: 6%;
+	font-size: 15px;
+	height: 7%;
+	width: 80%;
+	border: none;
+	padding-left: 40px;
+	border-bottom: 2px solid #095197;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,200%);
+	transition: width 0.5s, ease-in;
+}
+
+.passwordReg-a input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: url('img/key.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	background-size: 6%;
+	font-size: 15px;
+	height: 7%;
+	width: 80%;
+	border: none;
+	padding-left: 40px;
+	border-bottom: 2px solid #095197;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,400%);
+	transition: width 0.5s, ease-in;
+}
+
+.passwordReg-b input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: url('img/key.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	background-size: 6%;
+	font-size: 15px;
+	height: 7%;
+	width: 80%;
+	border: none;
+	padding-left: 40px;
+	border-bottom: 2px solid #095197;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,600%);
+	transition: width 0.5s, ease-in;
+}
+
+.sign-up input/*[type=submit]*/ {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: white;
+	left: 50%;
+	transform: translate(-50%,-120%);
+	position: relative;
+	width: 80%;
+	margin-top: 90%;
+	padding: 10px;
+	background: #095197;
+	border: 1px solid #0f4c75;
+	border-radius: 50px;
+}
+
+.sign-up p {
+	font-family: 'Crimson Text', serif;
+	font-size: 15px;
+	color: black;
+	margin: -39px 0px 0px 0px;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+}
+/*end of reg*/
+
+.password input:focus,
+.username input:focus,
+.usernameReg input:focus,
+.passwordReg-a input:focus,
+.passwordReg-b input:focus,
+.email input:focus {
+	width: 83%;
+	border-bottom: 3px solid #095197;
+	outline: none;
+}
+
+.sign-up input[type=submit]:hover,
+.sign-in input[type=submit]:hover {
+	background: #0f4c75;
+}
+
+.sign-up a,
+.sign-in a {
+	text-decoration: none;
+}
